@@ -1,0 +1,95 @@
+.arrow {
+    border: solid rgb(0 0 0 / 0.5);
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 5px;
+    height: 12px;
+    max-width: 12px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.trackinginfo-history-single, .trackinginfo-past-header {
+    display: flex;
+}
+
+.trackinginfo-history-single > div, .trackinginfo-past-header > h3, .trackinginfo-past-header > i {
+    flex: 1;
+}
+
+.trackinginfo-now-outer {
+    background: rgb(0 0 0 / 0.05);
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 10px -10px rgb(0 0 0 / 0.3);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.trackinginfo-now-outer > div > h2, .trackinginfo-now-outer > div > p, .trackinginfo-past-header > h3 {
+    margin: 0;
+}
+
+.trackinginfo-now-outer > div {
+    margin-bottom: 5px;
+}
+
+.trackinginfo-date, .trackinginfo-location {
+    opacity: 0.7;
+}
+
+div#trackinginfo-history {
+    margin-top: 40px;
+}
+
+.trackinginfo-past-header > i {
+    float: right;
+}
+
+.trackinginfo-past-header {
+    padding: 15px 25px 10px;
+    background: #f2f2f2;
+    align-items: baseline;
+    cursor: pointer;
+}
+
+.trackinginfo-past-inner {
+    border: 1px solid #f2f2f2;
+    padding: 30px 25px;
+}
+
+.trackinginfo-history-single {
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(0 0 0 / 0.1);
+}
+
+.trackinginfo-past-inner {
+    display: none;
+}
+
+div#trackinginfo-history.active .trackinginfo-past-inner {
+    display: block;
+}
+
+.trackinginfo-history-stat {
+    font-weight: bold;
+}
