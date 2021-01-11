@@ -3,7 +3,7 @@
 Plugin Name: WooCommerce Tracking
 Plugin URI: https://littlerhino.io
 Description: Including carrier tracking information within orders and order emails. Supports USPS, UPS, FedEx, DHL, and Canada Post.
-Version: 1.0.0
+Version: 1.0.1
 Author: Tyler Johnson
 Author URI: https://littlerhino.io
 Copyright: Little Rhino
@@ -26,7 +26,7 @@ if( !in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 /**
 Set our constants.
 **/
-define( 'LR_SHIPTRACK_VERSION', '1.0.0' );
+define( 'LR_SHIPTRACK_VERSION', '1.0.1' );
 define( 'LR_SHIPTRACK_PATH', trailingslashit( plugin_dir_path( __FILE__ ) ) );
 define( 'LR_SHIPTRACK_URL', trailingslashit( plugin_dir_url( __FILE__ ) ) );
 define( 'LR_SHIPTRACK_TXT', 'wc-lr-shiptrack' );
